@@ -1,0 +1,3 @@
+# SRI-Checker
+
+SRI-Checker will be a [WebExtenion (browser add-on)](https://developer.mozilla.org/Add-ons/WebExtensions) that exposes [SubResource Integrity](https://www.w3.org/TR/SRI/) to end-users so that they can whitelist the resources (most importantly, JavaScript) they receive from vendors. By adding `integrity` attributes to received pages, a user can force their browser to reject any un-audited source, even minified, before it is executed. For example, if I visit ProtonMail and audit their JavaScript, I can hash it, give SRI-Checker the hash I got, and ask it to ensure that this source *and only **this** source* ever be allowed to execute when fetched from the given URI.
